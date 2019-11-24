@@ -1,11 +1,11 @@
 require 'test_helper'
 
 class UsersIndexTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+
+
   def setup
-    @user = users(:michael)
+    @admin     = users(:michael)
+
     @non_admin = users(:archer)
   end
 
@@ -31,4 +31,8 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     get users_path
     assert_select 'a', text: 'delete', count: 0
   end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> updating-users3
