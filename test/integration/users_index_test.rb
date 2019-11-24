@@ -2,10 +2,15 @@ require 'test_helper'
 
 class UsersIndexTest < ActionDispatch::IntegrationTest
 
+<<<<<<< HEAD
 
   def setup
     @admin     = users(:michael)
 
+=======
+  def setup
+    @admin     = users(:michael)
+>>>>>>> advanced-login
     @non_admin = users(:archer)
   end
 
@@ -32,7 +37,11 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     assert_select 'a', text: 'delete', count: 0
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 end
 =======
 end
 >>>>>>> updating-users3
+=======
+end
+>>>>>>> advanced-login
